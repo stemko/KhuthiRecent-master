@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ru.solandme.simpleblog.Tabbed">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/miCompose"
+        android:icon="@drawable/location_pin"
+        app:showAsAction="always"
+        android:title="Compose">
+    </item>
+    <item
+        android:id="@+id/miProfile"
+        android:icon="@drawable/call_answer"
+        app:showAsAction="always"
+        android:title="Profile">
+    </item>
+    <item
+        android:id="@+id/miCompose1"
+        android:icon="@drawable/route"
+        app:showAsAction="always"
+        android:title="Compose">
+    </item>
+</menu>

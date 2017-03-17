@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="200dp"
+    android:layout_height="300dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context="ru.solandme.simpleblog.AddProductActivity">
+
+    android:background="@color/background">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Add New product"
+
+        android:layout_marginTop="5dp"
+
+        android:textSize="25sp"
+android:textStyle="bold"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+
+
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:inputType="text"
+            android:hint="@string/name" />
+
+
+        <ImageButton
+            android:id="@+id/imageSelect"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:adjustViewBounds="true"
+            android:background="#00ffffff"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cameraicon"
+            android:contentDescription="@string/post_image"
+            android:cropToPadding="false"
+            android:elevation="0dp"
+            android:layout_alignParentStart="true" />
+
+
+        <EditText
+            android:id="@+id/etPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R"
+            android:inputType="number"
+            android:hint="@string/estimated_price" />
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/description" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        >
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnAddItem"
+
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:text="@string/add_item"
+
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
